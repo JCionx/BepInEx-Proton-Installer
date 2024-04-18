@@ -145,10 +145,11 @@ print_blue "Opening winecfg..."
 print_blue "Go to the Libraries tab and add 'winhttp.dll' as a new override. Then close the window."
 protontricks "$game_id" winecfg >/dev/null 2>&1
 
-curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
+
 
 if [[ "$mlchoice" == "y" ]]; then
   print_blue "BepInExPack and MLLoader installed successfully!"
+  curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
 else
   print_blue "BepInExPack installed successfully!"
 fi
