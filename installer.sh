@@ -149,7 +149,6 @@ protontricks "$game_id" winecfg >/dev/null 2>&1
 
 if [[ "$mlchoice" == "y" ]]; then
   print_blue "BepInExPack and MLLoader installed successfully!"
-  curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
 else
   print_blue "BepInExPack installed successfully!"
 fi
