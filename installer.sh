@@ -1,5 +1,7 @@
 #!/bin/bash
 
+curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
+
 # Download URL
 download_url="https://gcdn.thunderstore.io/live/repository/packages/BepInEx-BepInExPack-5.4.2100.zip"
 download_name="BepInExPack.zip"
