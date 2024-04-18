@@ -1,7 +1,5 @@
 #!/bin/bash
 
-curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
-
 # Download URL
 download_url="https://gcdn.thunderstore.io/live/repository/packages/BepInEx-BepInExPack-5.4.2100.zip"
 download_name="BepInExPack.zip"
@@ -146,6 +144,8 @@ read -r game_id
 print_blue "Opening winecfg..."
 print_blue "Go to the Libraries tab and add 'winhttp.dll' as a new override. Then close the window."
 protontricks "$game_id" winecfg >/dev/null 2>&1
+
+curl -s -L https://raw.githubusercontent.com/JCionx/potato/master/potato.sh | bash
 
 if [[ "$mlchoice" == "y" ]]; then
   print_blue "BepInExPack and MLLoader installed successfully!"
